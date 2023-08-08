@@ -1,0 +1,83 @@
+.sidebarimage
+{
+    width: 40px;
+    /* padding-right: 5%; */
+    padding-right: 5%;
+    padding-left: 5%;
+}
+#logo
+{
+    width: 60px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.container
+{
+    display: grid;
+    grid-template-columns: 2fr 8fr 3fr;
+    grid-template-rows: auto auto auto auto auto;
+    min-height: 100vh;
+    /* grid-auto-rows: 20vh; */
+}
+.sidebar
+{
+    background-color: #d1bab8;
+    grid-row: 1 / 6;
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    color:black;
+    font-size:18px;
+    font-family: Arial, helvetica;
+    z-index: 1;
+}
+.header
+{
+    font-weight: 600;
+}
+
+.topbanner
+{
+    background-color: blue;
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+}
+.content
+{
+    background-color:purple;
+    grid-row: 2 / 6;
+    grid-column: 2 / 3;
+}
+.announcements
+{
+    background-color: black;
+    grid-row: 2 / 4;
+    grid-column: 3 / 4;
+}
+.trending
+{
+    background-color: orange;
+    grid-row: 4 / 6;
+    grid-column: 3 / 4;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.header
+{
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+}
+.sidebaritem
+{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
